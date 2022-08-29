@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slidemenustyles.css">
+    <title>Action Menu Button</title>
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img alt="bg.jpg" src="bg.jpg" id="photo">
+            <input type="file" id="file">
+            <label for="file" id="uploadBtn">choose file</label>
+            <script src="app.js"></script>
+        </div>
+        <div class="menu">
+            <div class="active">
+                
+            <h3>Its Me Erick<br><span>doing tha ting</span></h3>
+            <ul>
+                <li><img src="profile.png" alt="home.png"><a href="#">home</a></li>
+                <li><img src="profile.png" alt="profile.png"><a href="#">my profile</a></li>
+                <li><img src="profile.png" alt="key.png"><a href="#">Manage Accounts</a></li>
+                <li><img src="profile.png" alt="edit.png"><a href="#">Manage Portfolio</a></li>
+                <li><img src="profile.png" alt="inbox.png"><a href="#">Messages</a></li>
+                <li><img src="profile.png" alt="notifications.png"><a href="#">Notifications</a></li>
+                <li><img src="profile.png" alt="mission.png"><a href="#">Missions</a></li>
+                <li><img src="profile.png" alt="settings.png"><a href="#">Settings</a></li>
+                <li><img src="profile.png" alt="logout.png"><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div>
+        <script>
+            function menuToggle(){
+                const toggleMenu =document.querySelector('.menu');
+                toggleMenu.classList.toggle('active')
+            }
+        </script>
+    </div>
+</body>
+</html>

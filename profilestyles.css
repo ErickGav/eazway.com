@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans serif;
+}
+body{
+    padding: auto;
+    margin: auto;
+}
+    .profile-update .upload{
+      width: 140px;
+      position: relative;
+      margin: auto;
+      text-align: center;
+    }
+    .profile-update .upload img{
+      border-radius: 50%;
+      border: 8px solid #DCDCDC;
+      width: 125px;
+      height: 125px;
+    }
+    .profile-update .upload .rightRound{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #00B4FF;
+      width: 32px;
+      height: 32px;
+      line-height: 33px;
+      text-align: center;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .profile-update .upload .leftRound{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: red;
+      width: 32px;
+      height: 32px;
+      line-height: 33px;
+      text-align: center;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .profile-update .upload .fa{
+      color: white;
+    }
+    .profile-update .upload input{
+      position: absolute;
+      transform: scale(2);
+      opacity: 0;
+    }
+    .profile-update .upload input::-webkit-file-upload-button, .upload input[type=submit]{
+      cursor: pointer;
+    }
